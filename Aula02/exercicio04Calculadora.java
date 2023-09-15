@@ -1,6 +1,6 @@
 package Aula02;
 
-public class exercicio02Calculadora {
+public class exercicio04Calculadora {
     public double operacoes(double contas, double num1, double num2) {
         if (contas == 1) {
             double soma = num1 + num2;
