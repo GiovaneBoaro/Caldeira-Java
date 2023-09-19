@@ -1,7 +1,5 @@
 package Aula03;
 
-import java.time.LocalDateTime;
-
 public class ContaBancaria {
     // Criando os atributos
 
@@ -11,18 +9,19 @@ public class ContaBancaria {
     private String banco;
     private String endereco;
     private double saldo;
-    // declarar como String e iniciar com a formatação de hora (hh:mm:ss) e depois executar o formatDate na classe
     private String horarioAtual;
 
     // Criando os métodos construtores
 
-    public ContaBancaria(String nome, String cpf, String identificadorConta, String banco, String endereco) {
+    public ContaBancaria(String nome, String cpf, String identificadorConta, String banco, String endereco
+            , String horarioAtual) {
         this.nome = nome;
         this.cpf = cpf;
         this.identificadorConta = identificadorConta;
         this.banco = banco;
         this.endereco = endereco;
-//        this.horarioAtual = horarioAtual;
+        this.saldo = 0;
+        this.horarioAtual = horarioAtual;
     }
 
     //Criando getters e setters
@@ -88,11 +87,12 @@ public class ContaBancaria {
         texto = texto + "Nome do titular: " + this.nome + "\n";
         texto = texto + "CPF do titular: " + this.cpf + "\n";
         texto = texto + "Nome do banco: " + this.banco + "\n";
+        texto = texto + "Banco do titular: " + this.banco + "\n";
+        texto = texto + "Endereço do titular: " + this.endereco + "\n";
         return texto;
     }
 
     //Criando métodos especiais
-
     public void sacar(double valor) {
         if(valor <= this.saldo) {
             this.saldo = this.saldo - valor;
@@ -106,9 +106,14 @@ public class ContaBancaria {
     }
 
     public void pix(double valor) {
-        if(valor <= this.saldo)  {
+        if(valor <= this.saldo) {
             this.saldo = this.saldo - valor;
         }
     }
 
+    public void transferencia(double valor) {
+        if(valor <= this.saldo)  {
+            this.saldo = this.saldo - valor;
+        }
+    }
 }
