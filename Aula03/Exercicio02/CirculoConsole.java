@@ -1,4 +1,6 @@
-package Aula03;
+package Aula03.Exercicio02;
+
+import Aula03.Exercicio02.Circulo;
 
 import java.util.Scanner;
 

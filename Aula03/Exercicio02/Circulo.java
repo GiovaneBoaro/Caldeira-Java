@@ -1,4 +1,4 @@
-package Aula03;
+package Aula03.Exercicio02;
 
 public class Circulo {
 

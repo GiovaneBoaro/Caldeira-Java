@@ -1,11 +1,11 @@
-package Aula04.exercicio01;
+package Aula04.Exercicio01;
 
 public class Carro extends Veiculo {
-    double distancia = 5;
+    double distancia = 45;
     public Carro() {
         super.setAno(2015);
-        super.setMarca("fdgfhgfhgf");
-        super.setModelo("dhfghgfhgf");
+        super.setMarca("Chevrolet");
+        super.setModelo("Celta");
     }
     @Override
     public double calcularCustoViagem() {

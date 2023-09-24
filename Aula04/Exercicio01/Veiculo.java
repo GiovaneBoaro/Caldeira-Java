@@ -1,4 +1,4 @@
-package Aula04.exercicio01;
+package Aula04.Exercicio01;
 
 public abstract class Veiculo {
     private String marca;
@@ -22,7 +22,7 @@ public abstract class Veiculo {
         System.out.println(this.marca);
         System.out.println(this.modelo);
         System.out.println(this.ano);
-        System.out.println(calcularCustoViagem() + " Km");
+        System.out.println("R$ " + calcularCustoViagem());
 
     }
 
