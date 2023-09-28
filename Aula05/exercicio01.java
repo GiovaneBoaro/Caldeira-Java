@@ -15,6 +15,8 @@ public class exercicio01 {
             lista[cont] = scanner.nextInt();
         }
 
+        System.out.println("Números digitados: ");
+
         for (int cont = 0; cont < lista.length; cont++) {
             System.out.println(lista[cont]);
         }
@@ -25,6 +27,6 @@ public class exercicio01 {
 
         System.out.println("******************************");
         System.out.println("A soma é : " + soma);
-
+        System.out.println("A média é : " + (soma/lista.length));
     }
 }
