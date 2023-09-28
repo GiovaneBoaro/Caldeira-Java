@@ -5,8 +5,6 @@
 
 # Exercicios de Java: Orientação a Objetos - Aula 4
 
-### Não se esqueçam de salvarem esses códigos no repositório que criaram na aula 01.
-
 ### Exercício 01: Veículo
 
 1.1 Crie uma classe abstrata chamada Veiculo com os seguintes atributos e métodos:
