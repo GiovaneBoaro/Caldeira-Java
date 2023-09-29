@@ -1,4 +1,4 @@
-package Aula05;
+package aula05;
 
 import java.util.Random;
 import java.util.Scanner;
