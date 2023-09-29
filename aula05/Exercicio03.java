@@ -35,7 +35,7 @@ public class Exercicio03 {
                     System.out.println("Data da tarefa: ");
                     String data = scanner.nextLine();
 
-                    String tarefa = titulo + " - " + descricao + " - " + data;
+                    String tarefa = titulo + " | " + descricao + " | " + data;
 
                     lista.add(tarefa);
                     System.out.println(" Tarefa adicionada");
