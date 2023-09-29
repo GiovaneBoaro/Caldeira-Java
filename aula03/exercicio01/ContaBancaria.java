@@ -1,4 +1,4 @@
-package aula03.exercicio01;
+package Aula03.Exercicio01;
 
 public class ContaBancaria {
     // Criando os atributos

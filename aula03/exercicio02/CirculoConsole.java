@@ -17,6 +17,4 @@ public class CirculoConsole {
         System.out.println(circulo2.toString());
 
 
-        System.out.println(circulo1.equals(circulo2));
-    }
-}
+        System.out.println(c

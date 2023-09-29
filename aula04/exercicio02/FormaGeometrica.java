@@ -1,4 +1,4 @@
-package aula04.exercicio02;
+package Aula04.Exercicio02;
 
 public abstract class FormaGeometrica {
 

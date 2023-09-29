@@ -1,4 +1,4 @@
-package aula04.exercicio03;
+package Aula04.Exercicio03;
 
 public class TestaTributavel{
     public static void main(String[] args) {

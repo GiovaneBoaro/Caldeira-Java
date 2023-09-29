@@ -1,4 +1,4 @@
-package aula04.exercicio02;
+package Aula04.Exercicio02;
 
 public class Retangulo extends FormaGeometrica{
     private double altura;

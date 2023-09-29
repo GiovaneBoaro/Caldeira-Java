@@ -1,4 +1,6 @@
-package aula03.exercicio01;
+package Aula03.Exercicio01;
+
+import Aula03.Exercicio01.ContaBancaria;
 
 import java.util.Scanner;
 import java.util.Date;
