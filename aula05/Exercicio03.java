@@ -7,9 +7,9 @@ public class Exercicio03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList lista = new ArrayList<>();
-        int opcao = -1;
 
-        while(opcao != 0) {
+        boolean start = true;
+        while(start) {
             System.out.println("***************************");
             System.out.println("Programa lista de tarefas");
             System.out.println("Digite o que você quer fazer: ");
@@ -17,15 +17,15 @@ public class Exercicio03 {
             System.out.println("1 - Adicionar tarefa");
             System.out.println("2 - Remover tarefa");
             System.out.println("3 - Ver todas as tarefas");
-            opcao = Integer.parseInt(scanner.nextLine());
+            int opcao = Integer.parseInt(scanner.nextLine());
 
             int i;
 
             switch (opcao) {
-                case 0:
+                case 0 -> {
                     System.out.println("Obrigado por utilizar o programa!");
-                    break;
-                case 1:
+                    start = false;
+                } case 1 -> {
                     System.out.println("Titulo da tarefa: ");
                     String titulo = scanner.nextLine();
 
@@ -39,26 +39,25 @@ public class Exercicio03 {
 
                     lista.add(tarefa);
                     System.out.println(" Tarefa adicionada");
-                    break;
-                case 2:
+                } case 2 -> {
                     System.out.println("Qual tarefa você deseja excluir? Escolha pelo índice");
                     i = Integer.parseInt(scanner.nextLine());
 
                     try {
-                        lista.remove(i -1);
+                        lista.remove(i - 1);
                     } catch (IndexOutOfBoundsException e) {
                         System.out.println("Tarefa inválida!");
                     }
-                    break;
-                case 3:
+                } case 3 -> {
                     System.out.println("Todas as tarefas criadas: ");
                     int n = lista.size();
-                    for(i = 0; i < n; i++) {
+                    for (i = 0; i < n; i++) {
                         System.out.println(lista.get(i));
                     }
-                    break;
-                default:
+
+                } default -> {
                     System.out.println("Opção inválida");
+                }
             }
         }
     }
