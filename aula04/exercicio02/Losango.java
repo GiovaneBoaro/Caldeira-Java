@@ -1,4 +1,4 @@
-package Aula04.Exercicio02;
+package aula04.exercicio02;
 
 public class Losango extends FormaGeometrica{
     private double diagonalMaior;

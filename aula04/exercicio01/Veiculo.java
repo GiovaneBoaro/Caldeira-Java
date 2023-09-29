@@ -1,4 +1,4 @@
-package Aula04.Exercicio01;
+package aula04.exercicio01;
 
 public abstract class Veiculo {
     private String marca;

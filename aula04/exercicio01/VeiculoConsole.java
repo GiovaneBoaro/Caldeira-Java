@@ -1,6 +1,6 @@
-package Aula04.Exercicio01;
+package aula04.exercicio01;
 
-import Aula04.Exercicio01.Carro;
+import aula04.exercicio01.Carro;
 
 public class VeiculoConsole {
     public static void main(String[] args) {

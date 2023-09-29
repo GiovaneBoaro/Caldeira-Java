@@ -3,7 +3,7 @@ package aula03.exercicio02;
 import java.util.Scanner;
 
 public class CirculoConsole {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         Circulo circulo1 = new Circulo(1);
@@ -16,5 +16,6 @@ public class CirculoConsole {
         circulo2.setRaio(Double.parseDouble(scanner.nextLine()));
         System.out.println(circulo2.toString());
 
-
-        System.out.println(c
+        System.out.println(circulo1.equals(circulo2));
+    }
+}

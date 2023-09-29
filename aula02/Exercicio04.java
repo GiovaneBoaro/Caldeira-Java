@@ -1,9 +1,9 @@
-package Aula02;
+package aula02;
 
 import java.util.Scanner;
 public class Exercicio04 {
     public static void main(String[] args) {
-        exercicio04Calculadora calc = new exercicio04Calculadora();
+        Exercicio04Calculadora calc = new Exercicio04Calculadora();
         Scanner scanner = new Scanner(System.in);
         char userInput;
 

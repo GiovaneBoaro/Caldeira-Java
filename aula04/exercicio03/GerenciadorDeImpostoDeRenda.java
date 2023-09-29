@@ -1,4 +1,4 @@
-package Aula04.Exercicio03;
+package aula04.exercicio03;
 
 public class GerenciadorDeImpostoDeRenda {
     private double somaTotalDosTributos = 0;
