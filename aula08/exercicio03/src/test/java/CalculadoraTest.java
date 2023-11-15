@@ -54,7 +54,7 @@ public class CalculadoraTest {
     @Test
     public void testPotencia() {
         Calculadora calculadora = new Calculadora();
-        assertEquals(16.0, calculadora.potencia(2.0, 4.0), 0.001);
+        assertEquals(64.0, calculadora.potencia(2.0, 6.0), 0.001);
     }
 
 
