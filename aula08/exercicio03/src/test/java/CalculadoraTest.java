@@ -3,6 +3,7 @@ package aula08.exercicio03.src.test.java;
 import aula08.exercicio03.src.main.java.Calculadora;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 public class CalculadoraTest {
 //assertEquals - método que recebe como parâmetro o resultado do método que está sendo testado e o resultado
@@ -32,16 +33,22 @@ public class CalculadoraTest {
         assertEquals(4.0, calculadora.divisao(8.0, 2.0), 0.001);
     }
 
-//    @Test(expected = ArithmeticException.class)
-//    public void testDivisaoPorZero() {
-//        Calculadora calculadora = new Calculadora();
-//        calculadora.divisao(5.0, 0.0);
-//    }
+    @Test(expected = Throwable.class)
+    public void testDivisaoPorZero() {
+        Calculadora calculadora = new Calculadora();
+        assertThrows(ArithmeticException.class, () -> calculadora.divisao(10.0, 0.0));
+    }
 
     @Test
     public void testRaizQuadrada() {
         Calculadora calculadora = new Calculadora();
         assertEquals(9.0, calculadora.raizQuadrada(81.0), 0.001);
+    }
+
+    @Test(expected = Throwable.class)
+    public void testRaizQuadradaDeNumeroNegativo() {
+        Calculadora calculadora = new Calculadora();
+        assertThrows(ArithmeticException.class, () -> calculadora.raizQuadrada(-2.0));
     }
 
     @Test
@@ -50,9 +57,5 @@ public class CalculadoraTest {
         assertEquals(16.0, calculadora.potencia(2.0, 4.0), 0.001);
     }
 
-//    @Test(expected = ArithmeticException.class)
-//    public void testRaizQuadradaDeNumeroNegativo() {
-//        Calculadora calculadora = new Calculadora();
-//        calculadora.raizQuadrada(-9.0);
-//    }
+
 }
